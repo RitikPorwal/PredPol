@@ -1,0 +1,184 @@
+[training@localhost Desktop]$ cat dataset | ./location_mapper.py | sort | ./location_cluster_new.py
+
+
+For Area 1 with centroid at : ([1128000.0],[1866900.0]) - Occurrence of Crime types are:  
+----------------------------------------------------------------------------------------------
+		THEFT			: 286
+		CRIMINAL DAMAGE		: 316
+		BURGLARY		: 260
+		ASSAULT			: 190
+		NARCOTICS		: 71
+
+		=> Total Crimes occured and reported in above Area is : 1123 reports.
+
+		=> Also the most frequent crime in above Area is : CRIMINAL DAMAGE - 316 times.
+
+		=> Policing guidlines / Strategy to be followed : Petrolling to be increased in area, Focus on suspicious personnels with damage history
+
+
+For Area 2 with centroid at : ([1150000.0],[1887500.0]) - Occurrence of Crime types are:  
+----------------------------------------------------------------------------------------------
+		THEFT			: 1395
+		CRIMINAL DAMAGE		: 1765
+		BURGLARY		: 1446
+		ASSAULT			: 1277
+		NARCOTICS		: 991
+
+		=> Total Crimes occured and reported in above Area is : 6874 reports.
+
+		=> Also the most frequent crime in above Area is : CRIMINAL DAMAGE - 1765 times.
+
+		=> Policing guidlines / Strategy to be followed : Petrolling to be increased in area, Focus on suspicious personnels with damage history
+
+
+For Area 3 with centroid at : ([1172000.0],[1908100.0]) - Occurrence of Crime types are:  
+----------------------------------------------------------------------------------------------
+		THEFT			: 1991
+		CRIMINAL DAMAGE		: 917
+		BURGLARY		: 797
+		ASSAULT			: 590
+		NARCOTICS		: 178
+
+		=> Total Crimes occured and reported in above Area is : 4473 reports.
+
+		=> Also the most frequent crime in above Area is : THEFT - 1991 times.
+
+		=> Policing guidlines / Strategy to be followed : Security surviellance cameras to be installed, Focus on awareness regarding security systems in the area
+
+
+For Area 4 with centroid at : ([1194000.0],[1928700.0]) - Occurrence of Crime types are:  
+----------------------------------------------------------------------------------------------
+		THEFT			: 130
+		CRIMINAL DAMAGE		: 100
+		BURGLARY		: 69
+		ASSAULT			: 74
+		NARCOTICS		: 12
+
+		=> Total Crimes occured and reported in above Area is : 385 reports.
+
+		=> Also the most frequent crime in above Area is : THEFT - 130 times.
+
+		=> Policing guidlines / Strategy to be followed : Security surviellance cameras to be installed, Focus on awareness regarding security systems in the area
+
+
+**************************************************************************************************
+
+									THEFT		CRIMINAL	BURGLARY	ASSAULT		NARCOTICS
+
+Area 1 with centroid at : ([1128000.0],[1866900.0])			286		316		260		190		71
+
+Area 2 with centroid at : ([1150000.0],[1887500.0])			1395		1765		1446		1277		991
+
+Area 3 with centroid at : ([1172000.0],[1908100.0])			1991		917		797		590		178
+
+Area 4 with centroid at : ([1194000.0],[1928700.0])			130		100		69		74		12
+
+
+**************************************************************************************************
+
+	* Total number of Tuples analysed are : 12855
+
+**************************************************************************************************
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[training@localhost Desktop]$ cat dataset | ./location_mapper.py | sort | ./location_reducer.py
+
+
+For Area 1 - Occurance of Crime types are:  
+-------------------------------------------------------------
+		THEFT			: 22
+		CRIMINAL DAMAGE		: 7
+		BURGLARY		: 2
+		ASSAULT			: 7
+		NARCOTICS		: 0
+
+		=> Total Crimes occured and reported in above Area is : 38 reports.
+
+		=> Also the most occured crime in above Area is : THEFT - 22 times.
+
+		=> Policing guidlines / Strategy to be followed : Security surviellance cameras to be installed, Focus on awareness regarding security systems in the area
+
+
+For Area 2 - Occurance of Crime types are:  
+-------------------------------------------------------------
+		THEFT			: 164
+		CRIMINAL DAMAGE		: 176
+		BURGLARY		: 182
+		ASSAULT			: 112
+		NARCOTICS		: 37
+
+		=> Total Crimes occured and reported in above Area is : 671 reports.
+
+		=> Also the most occured crime in above Area is : BURGLARY - 182 times.
+
+		=> Policing guidlines / Strategy to be followed : Alarming systems and emergency alarm button to be installed, Focus on quicker action plan to avoid delays
+
+
+For Area 3 - Occurance of Crime types are:  
+-------------------------------------------------------------
+		THEFT			: 1054
+		CRIMINAL DAMAGE		: 1112
+		BURGLARY		: 999
+		ASSAULT			: 708
+		NARCOTICS		: 748
+
+		=> Total Crimes occured and reported in above Area is : 4621 reports.
+
+		=> Also the most occured crime in above Area is : CRIMINAL DAMAGE - 1112 times.
+
+		=> Policing guidlines / Strategy to be followed : Petrolling to be increased in area, Focus on suspicious personnels with damage history
+
+
+For Area 4 - Occurance of Crime types are:  
+-------------------------------------------------------------
+		THEFT			: 2265
+		CRIMINAL DAMAGE		: 1413
+		BURGLARY		: 1156
+		ASSAULT			: 1038
+		NARCOTICS		: 402
+
+		=> Total Crimes occured and reported in above Area is : 6274 reports.
+
+		=> Also the most occured crime in above Area is : THEFT - 2265 times.
+
+		=> Policing guidlines / Strategy to be followed : Security surviellance cameras to be installed, Focus on awareness regarding security systems in the area
+
+
+For Area 5 - Occurance of Crime types are:  
+-------------------------------------------------------------
+		THEFT			: 297
+		CRIMINAL DAMAGE		: 390
+		BURGLARY		: 233
+		ASSAULT			: 266
+		NARCOTICS		: 65
+
+		=> Total Crimes occured and reported in above Area is : 1251 reports.
+
+		=> Also the most occured crime in above Area is : CRIMINAL DAMAGE - 390 times.
+
+		=> Policing guidlines / Strategy to be followed : Petrolling to be increased in area, Focus on suspicious personnels with damage history
+
+
+**************************************************************************************************
+
+			THEFT		CRIMINAL	BURGLARY	ASSAULT		NARCOTICS
+		-----------------------------------------------------------------------------------
+
+Area 1			22		7		2		7		0
+
+Area 2			164		176		182		112		37
+
+Area 3			1054		1112		999		708		748
+
+Area 4			2265		1413		1156		1038		402
+
+Area 5			297		390		233		266		65
+
+
+**************************************************************************************************
+
+	* Total number of Tuples analysed are : 12855
+
+**************************************************************************************************
+
+
